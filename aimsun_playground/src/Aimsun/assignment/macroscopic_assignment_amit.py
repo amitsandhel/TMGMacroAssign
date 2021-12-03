@@ -114,6 +114,7 @@ def read_vdf_functions(console, model, catalog):
 fun_test = """
 def hello_world():
     print("hello world")
+    print ("This works")
 """
 def edit_existing_vdf_functions(console, model, catalog):
     """attempt to edit an existing vdf function in the network heer we can create a new python function"""
