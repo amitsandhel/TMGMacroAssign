@@ -7,7 +7,6 @@ import shlex
 import inspect
 
 
-
 def vdf(context, section, funcVolume):
     """this function is the default function found in the ang file we were playing with
     over the weekend keepting it here for backup and reference"""
@@ -180,7 +179,7 @@ def create_new_functions(console, model, catalog):
     name_of_function = "AmitVDFs2"
     functions2 = create_gkobject("GKFunctionCost", model, name_of_function)
     add_folder_to_gkobject("GKModel::functions", model, functions2)
-    
+
     classtype_function_cost = model.getType("GKFunctionCost")
     dict_catalog_function_cost = catalog.getObjectsByType( classtype_function_cost )
     write_vdf_function(console, model, catalog, dict_catalog_function_cost, name_of_function)
